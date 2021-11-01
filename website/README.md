@@ -9,6 +9,7 @@ Clone the repository & make sure submodules are included
 
 ```
 $ git clone https://github.com/jakevdp/PythonDataScienceHandbook.git
+$ cd PythonDataScienceHandbook
 $ git checkout origin/website
 $ git submodule update --init --recursive
 $ cd website
@@ -18,7 +19,7 @@ Install the required packages:
 
 ```
 $ conda create -n pelican-blog python=3.5 jupyter notebook
-$ source activate pelican-blog
+$ conda activate pelican-blog
 $ pip install pelican Markdown ghp-import
 $ mkdir plugins
 $ git submodule add git://github.com/danielfrg/pelican-ipynb.git plugins/ipynb
